@@ -13,7 +13,7 @@ import { JsonPipe } from '@angular/common'; // Import JsonPipe directly
 export class AppComponent implements OnInit {
   newdata: any;
 
-  constructor(private _apiservice: ApiserviceService) {}
+  constructor(public _apiservice: ApiserviceService) {}
 
   ngOnInit() {
     this.getData();
